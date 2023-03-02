@@ -1,0 +1,51 @@
+{
+  "name": "@midly/react-dropdown",
+  "version": "1.0.3",
+  "description": "React-dropdown is a simplest way to create a dropdown on your ReactJS site.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichelD-dev/react-dropdown.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "typescript",
+    "dropdown",
+    "select",
+    "combobox"
+  ],
+  "author": "MichelD-dev <delaunaymichel@hotmail.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichelD-dev/react-dropdown/issues"
+  },
+  "homepage": "https://github.com/MichelD-dev/react-dropdown#readme",
+  "devDependencies": {
+    "@types/react": ">=16",
+    "@types/react-dom": ">=16",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
+  }
+}
