@@ -1,6 +1,6 @@
 {
   "name": "@midly/react-dropdown",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "description": "React-dropdown is a simplest way to create a dropdown on your ReactJS site.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -13,7 +13,9 @@
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts, tsx}\""
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,16 @@
   "devDependencies": {
     "@types/react": ">=16",
     "@types/react-dom": ">=16",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.4",
+    "react": ">=16",
     "typescript": "^4.9.5"
   },
   "peerDependencies": {
@@ -44,8 +56,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "tslib": "^2.5.0"
   }
 }

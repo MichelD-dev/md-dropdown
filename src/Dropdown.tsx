@@ -1,4 +1,4 @@
-import React,{ChangeEvent, HTMLProps, useEffect, useState} from 'react'
+import React, {ChangeEvent, HTMLProps, useEffect, useState} from 'react'
 
 type DropdownProps<T extends string | number | string[]> = {
   options: T[]
