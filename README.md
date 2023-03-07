@@ -6,7 +6,7 @@
 
 React-dropdown is a simplest way to create a dropdown on your ReactJS site.
 
-- Very small (less than 11Kb)
+- Very small (less than 15Kb)
 - Mobile friendly
 
 ## Getting Started

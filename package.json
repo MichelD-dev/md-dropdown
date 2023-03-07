@@ -1,6 +1,6 @@
 {
   "name": "@midly/react-dropdown",
-  "version": "1.1.2",
+  "version": "2.1.1",
   "description": "React-dropdown is a simplest way to create a dropdown on your ReactJS site.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -56,5 +56,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
   }
 }
